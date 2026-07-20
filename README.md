@@ -55,6 +55,14 @@ This repository does **not** include credentials.
 
 Store your own username and password locally before running the script.
 
+## Compatibility
+
+This script is designed for campus networks that use the same captive portal endpoint and request format.
+
+If your institution uses a different login URL or different form parameters, update the values in `login.ps1` accordingly.
+
+Users should replace the placeholder username and password with their own credentials before running the script.
+
 ## Disclaimer
 
 This project is intended for educational and personal automation purposes only. Use it only on networks where you are authorized to automate the login process.
