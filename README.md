@@ -18,9 +18,10 @@ A lightweight PowerShell script that automatically logs into a college/campus ca
 - Access to a captive portal login page
 
 ## Configuration
+
 Download `login.ps1` from above and save it in location as "C:\Scripts\login.ps1"
 
-Open `login.ps1` using notepad and update the following values:
+Open `login.ps1` using notepad and update the following values within the double apostrophe:
 
 ```powershell
 $username = "YOUR_USERNAME"
@@ -29,7 +30,7 @@ $password = "YOUR_PASSWORD"
 
 If your campus uses a different login URL or form fields, modify them accordingly.
 
-## Setup
+## Setup (READ THEM CAREFULLY)
 
 1. Save the script.
 2. Open **Task Scheduler**.
