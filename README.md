@@ -18,8 +18,9 @@ A lightweight PowerShell script that automatically logs into a college/campus ca
 - Access to a captive portal login page
 
 ## Configuration
+Download `login.ps1` from above and save it in location as "C:\Scripts\login.ps1"
 
-Open `login.ps1` and update the following values:
+Open `login.ps1` using notepad and update the following values:
 
 ```powershell
 $username = "YOUR_USERNAME"
@@ -32,20 +33,23 @@ If your campus uses a different login URL or form fields, modify them accordingl
 
 1. Save the script.
 2. Open **Task Scheduler**.
-3. Create a new task.
-4. Trigger:
-   - **At log on**
-5. Program:
+3. Create a new task named as "Create task"
+4. Type a name for the task example "college internet auto login"
+5. Trigger:
+   - Begin the task :  **At log on**
+6. Action : Start a program
+7. Program/script:
 
 ```
 powershell.exe
 ```
 
-6. Arguments:
+8.Add Arguments:
 
 ```
 -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Scripts\login.ps1"
 ```
+9.Conditions: Start only if the following network connection is available(tick the box and select the wifi which you want to auto connect)
 
 The script will automatically log into the network after Windows starts.
 
