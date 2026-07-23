@@ -30,7 +30,7 @@ $password = "YOUR_PASSWORD"
 
 If your campus uses a different login URL or form fields, modify them accordingly.
 
-## Setup (READ THEM CAREFULLY AND DO EACH STEP IN PROPER WAY)
+## Setup (READ THEM CAREFULLY AND DO EACH STEP IN PROPER)
 
 1. Save the script.
 2. Open **Task Scheduler**.
