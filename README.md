@@ -50,6 +50,7 @@ powershell.exe
 ```
 -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Scripts\login.ps1"
 ```
+
 9.Conditions: Start only if the following network connection is available(tick the box and select the wifi which you want to auto connect)
 
 The script will automatically log into the network after Windows starts.
@@ -57,19 +58,26 @@ The script will automatically log into the network after Windows starts.
 10.Add another trigger
 
 11.At log on 
-        Add a second trigger Open your task. Go to: Triggers → New... Choose: Begin the task: On an event 
-        Then set: Log: 
-        ```
-        Microsoft-Windows-NetworkProfile/Operational 
-        ```
-        Source:
-        ```
-        NetworkProfile
-        ```
-        Event ID: 
-        ```
-        10000
-        ```
+        
+Add a second trigger Open your task. Go to: Triggers → New... Choose: Begin the task: On an event 
+
+Then set: Log: 
+
+```
+Microsoft-Windows-NetworkProfile/Operational
+```
+
+Source:
+
+```
+NetworkProfile
+```
+
+Event ID: 
+```
+10000
+```
+
 12.Click OK.
 ## Security
 
