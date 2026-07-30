@@ -55,7 +55,7 @@ powershell.exe
 
 The script will automatically log into the network after Windows starts.
 
-10.Add another trigger
+10.Add another trigger (if you want to automate it even after disconnecting and to reconnect again)
 
 11.At log on 
         
