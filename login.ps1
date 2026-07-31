@@ -7,7 +7,9 @@ $server = "172.16.208.2"
 $port = 8090
 # ========================
 
-# Wait up to 2 minutes for the portal to become reachable
+#Default wait up to 2 minutes for the portal to become reachable.
+#you can edit 'timeout' value more than the default to increase the script to be active more.
+#'timeout' vaule is in seconds, 2 min = 120 s.
 $timeout = 120
 $elapsed = 0
 
